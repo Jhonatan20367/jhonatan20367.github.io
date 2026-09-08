@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de verificación del portafolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff; /* Fondo blanco como en la imagen */
+            color: #000000;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #000000;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            max-width: 900px;
+            border-collapse: collapse;
+            border: 1px solid #cddcc0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border: 1px solid #cddcc0;
+        }
+
+        /* Estilo del encabezado verde oscuro */
+        th {
+            background-color: #3e6b1e;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        /* Fila de verificación */
+        .check-col {
+            text-align: center;
+            width: 80px;
+        }
+
+        /* Alternar colores de fondo (blanco y verde muy claro) */
+        tbody tr:nth-child(odd) {
+            background-color: #f4f9ec;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        /* Estilo para el cuadro de verificación */
+        input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>2. Lista de verificación del portafolio final</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Elemento</th>
+                <th class="check-col">¿Listo?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sección de presentación personal</td>
+                <td class="check-col"><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Sección de formación académica</td>
+                <td class="check-col"><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Sección de habilidades</td>
+                <td class="check-col"><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Sección de proyectos destacados</td>
+                <td class="check-col"><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Datos de contacto</td>
+                <td class="check-col"><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Estilo CSS aplicado (colores, tipografía, espaciado)</td>
+                <td class="check-col"><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Página publicada con enlace funcional (GitHub Pages)</td>
+                <td class="check-col"><input type="checkbox"></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
