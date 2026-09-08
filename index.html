@@ -3,106 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de verificación del portafolio</title>
+    <title>Portafolio - Jhonatan Quintero</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #ffffff; /* Fondo blanco como en la imagen */
-            color: #000000;
-            line-height: 1.6;
-            margin: 20px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-
-        h2 {
-            color: #000000;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        table {
-            width: 100%;
-            max-width: 900px;
-            border-collapse: collapse;
-            border: 1px solid #cddcc0;
-        }
-
-        th, td {
-            text-align: left;
-            padding: 12px;
-            border: 1px solid #cddcc0;
-        }
-
-        /* Estilo del encabezado verde oscuro */
-        th {
-            background-color: #3e6b1e;
-            color: #ffffff;
-            font-weight: bold;
-        }
-
-        /* Fila de verificación */
-        .check-col {
+        header {
+            background-color: #35424a;
+            color: white;
+            padding: 50px 20px;
             text-align: center;
-            width: 80px;
+        }
+        header h1 { margin: 0; font-size: 2rem; }
+        header p { margin: 10px 0 0; font-size: 1.2rem; color: #e8491d; }
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #35424a;
+            border-bottom: 2px solid #e8491d;
+            padding-bottom: 10px;
         }
 
-        /* Alternar colores de fondo (blanco y verde muy claro) */
-        tbody tr:nth-child(odd) {
-            background-color: #f4f9ec;
+        .habilidad { margin-bottom: 10px; }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #35424a;
+            color: white;
         }
-        tbody tr:nth-child(even) {
-            background-color: #ffffff;
-        }
-
-        /* Estilo para el cuadro de verificación */
-        input[type="checkbox"] {
-            width: 16px;
-            height: 16px;
-            cursor: pointer;
+        
+        /* Hace que la página se vea bien en el celular */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.5rem; }
+            .container { padding: 15px; }
         }
     </style>
 </head>
 <body>
 
-    <h2>2. Lista de verificación del portafolio final</h2>
+    <header>
+        <h1>Jhonatan Quintero Bastidas</h1>
+        <p>Estudiante de Arquitectura</p>
+    </header>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Elemento</th>
-                <th class="check-col">¿Listo?</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Sección de presentación personal</td>
-                <td class="check-col"><input type="checkbox"></td>
-            </tr>
-            <tr>
-                <td>Sección de formación académica</td>
-                <td class="check-col"><input type="checkbox"></td>
-            </tr>
-            <tr>
-                <td>Sección de habilidades</td>
-                <td class="check-col"><input type="checkbox"></td>
-            </tr>
-            <tr>
-                <td>Sección de proyectos destacados</td>
-                <td class="check-col"><input type="checkbox"></td>
-            </tr>
-            <tr>
-                <td>Datos de contacto</td>
-                <td class="check-col"><input type="checkbox"></td>
-            </tr>
-            <tr>
-                <td>Estilo CSS aplicado (colores, tipografía, espaciado)</td>
-                <td class="check-col"><input type="checkbox"></td>
-            </tr>
-            <tr>
-                <td>Página publicada con enlace funcional (GitHub Pages)</td>
-                <td class="check-col"><input type="checkbox"></td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="container">
+        
+        <!-- Sección de presentación personal -->
+        <section id="presentacion">
+            <h2>Sobre mí</h2>
+            <p>Hola, soy una persona apasionada por la arquitectura y el diseño, me gusta el fútbol y busco desarrollarme en el campo de la construcción.</p>
+        </section>
+
+        <!-- Sección de formación académica -->
+        <section id="formacion">
+            <h2>Formación Académica</h2>
+            <p><strong>Institución Educativa Chaira José María Córdoba</strong> - Bachillerato</p>
+        </section>
+
+        <!-- Sección de habilidades -->
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <div class="habilidad"><strong>HTML y CSS:</strong> Básico</div>
+            <div class="habilidad"><strong>Dibujo y Diseño Arquitectónico:</strong> Básico</div>
+        </section>
+
+        <!-- Sección de proyectos destacados -->
+        <section id="proyectos">
+            <h2>Proyectos Destacados</h2>
+            <p><strong>Página de recetas:</strong> Un sitio web para compartir recetas de cocina.</p>
+        </section>
+
+        <!-- Datos de contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p><strong>Correo:</strong> jhonatanquintero936@gmail.com</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Jhonatan20367" target="_blank">Jhonatan20367</a></p>
+            <p><strong>Teléfono:</strong> 3136703416</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Jhonatan Quintero Bastidas. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
 </html>
