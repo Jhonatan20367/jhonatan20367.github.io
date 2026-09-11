@@ -6,99 +6,132 @@
     <title>Portafolio - Jhonatan Quintero</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f4f4f4; /* Fondo gris claro como en la imagen */
             color: #333;
+            line-height: 1.6;
         }
-        header {
-            background-color: #35424a;
-            color: white;
-            padding: 50px 20px;
-            text-align: center;
-        }
-        header h1 { margin: 0; font-size: 2rem; }
-        header p { margin: 10px 0 0; font-size: 1.2rem; color: #e8491d; }
         
         .container {
             max-width: 800px;
             margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        
-        h2 {
-            color: #35424a;
-            border-bottom: 2px solid #e8491d;
-            padding-bottom: 10px;
+            padding: 0 15px;
         }
 
-        .habilidad { margin-bottom: 10px; }
-        
-        footer {
+        /* Estilo de las tarjetas blancas */
+        .card {
+            background-color: #ffffff;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #1b5e20; /* Verde oscuro de la imagen */
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        /* Línea divisoria verde */
+        .divider {
+            height: 2px;
+            background-color: #1b5e20;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .footer {
             text-align: center;
-            padding: 20px;
-            background: #35424a;
-            color: white;
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 30px;
+            padding-bottom: 20px;
         }
         
-        /* Hace que la página se vea bien en el celular */
+        /* Hace que se vea bien en el celular */
         @media (max-width: 600px) {
-            header h1 { font-size: 1.5rem; }
-            .container { padding: 15px; }
+            h2 { font-size: 1.3rem; }
+            .card { padding: 15px; }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Jhonatan Quintero Bastidas</h1>
-        <p>Estudiante de Arquitectura</p>
-    </header>
-
     <div class="container">
         
-        <!-- Sección de presentación personal -->
-        <section id="presentacion">
+        <!-- Sección Sobre mí -->
+        <div class="card">
             <h2>Sobre mí</h2>
-            <p>Hola, soy una persona apasionada por la arquitectura y el diseño, me gusta el fútbol y busco desarrollarme en el campo de la construcción.</p>
-        </section>
+            <div class="divider"></div>
+            <p>Mi nombre es Jhonatan Quintero Bastidas. Soy un joven que está culminando una etapa muy importante en su vida; actualmente curso el grado 11 y me encuentro viviendo muchas experiencias que me están formando. Nací en Cartagena del Chairá, Caquetá, el 24 de diciembre de 2009. Cada experiencia me ha enseñado a ser quien soy hoy.</p>
+            <p>Me considero una persona entusiasta, estoy aprendiendo a conocerme, a descubrir qué quiero realmente y a entender que no tengo que tener la vida resuelta desde ahora. Lo importante para mí es avanzar, aprender de mis errores y no perder de vista a la persona que quiero llegar a ser.</p>
+            <p>Durante mi etapa escolar he vivido momentos buenos y otros que me han puesto a prueba; el colegio no solamente me ha enseñado materias y conocimientos académicos, también me ha enseñado sobre la responsabilidad, la amistad, el compañerismo, el liderazgo y la importancia de esforzarme por aquello que quiero conseguir.</p>
+        </div>
 
-        <!-- Sección de formación académica -->
-        <section id="formacion">
+        <!-- Sección Formación Académica -->
+        <div class="card">
             <h2>Formación Académica</h2>
-            <p><strong>Institución Educativa Chaira José María Córdoba</strong> - Bachillerato</p>
-        </section>
+            <div class="divider"></div>
+            <ul>
+                <li><strong>Colegio:</strong> I.E. Chairá José María Córdoba - 2026</li>
+                <li><strong>Curso:</strong> Grado 11</li>
+            </ul>
+        </div>
 
-        <!-- Sección de habilidades -->
-        <section id="habilidades">
+        <!-- Sección Habilidades -->
+        <div class="card">
             <h2>Habilidades</h2>
-            <div class="habilidad"><strong>HTML y CSS:</strong> Básico</div>
-            <div class="habilidad"><strong>Dibujo y Diseño Arquitectónico:</strong> Básico</div>
-        </section>
+            <div class="divider"></div>
+            <ul>
+                <li>Manejar moto, liderazgo</li>
+                <li>Pensamiento crítico, dibujar</li>
+                <li>Trabajo en equipo, creatividad y escucha activa</li>
+                <li>Interés y bases en diseño arquitectónico</li>
+            </ul>
+        </div>
 
-        <!-- Sección de proyectos destacados -->
-        <section id="proyectos">
+        <!-- Sección Proyectos Destacados -->
+        <div class="card">
             <h2>Proyectos Destacados</h2>
-            <p><strong>Página de recetas:</strong> Un sitio web para compartir recetas de cocina.</p>
-        </section>
+            <div class="divider"></div>
+            <p>Culminé mi preparatoria y actualmente estoy ejerciendo un técnico en mi colegio a través del SENA, esforzándome cada día por aprender y superarme.</p>
+        </div>
 
-        <!-- Datos de contacto -->
-        <section id="contacto">
+        <!-- Sección Contacto -->
+        <div class="card">
             <h2>Contacto</h2>
-            <p><strong>Correo:</strong> jhonatanquintero936@gmail.com</p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/Jhonatan20367" target="_blank">Jhonatan20367</a></p>
-            <p><strong>Teléfono:</strong> 3136703416</p>
-        </section>
+            <div class="divider"></div>
+            <ul>
+                <li><strong>Teléfono:</strong> 3136703416</li>
+                <li><strong>Email:</strong> jhonatanquintero936@gmail.com</li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/Jhonatan20367" target="_blank">Jhonatan20367</a></li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            Creado por Jhonatan Quintero Bastidas - Semana 10 - 2026
+        </div>
 
     </div>
-
-    <footer>
-        <p>&copy; 2026 Jhonatan Quintero Bastidas. Todos los derechos reservados.</p>
-    </footer>
 
 </body>
 </html>
