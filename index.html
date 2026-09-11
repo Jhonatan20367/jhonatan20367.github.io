@@ -9,11 +9,32 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4; /* Fondo gris claro como en la imagen */
+            background-color: #f4f4f4; 
             color: #333;
             line-height: 1.6;
         }
         
+        /* --- AQUÍ ESTÁ LO QUE FALTABA: LA CABECERA VERDE --- */
+        header {
+            background-color: #0b3b24; /* El verde oscuro de la imagen */
+            color: #ffffff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            margin: 0 0 15px 0;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #e0e0e0;
+        }
+        /* --------------------------------------------------- */
+
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -30,13 +51,12 @@
         }
 
         h2 {
-            color: #1b5e20; /* Verde oscuro de la imagen */
+            color: #1b5e20; 
             font-size: 1.5rem;
             margin-top: 0;
             margin-bottom: 10px;
         }
 
-        /* Línea divisoria verde */
         .divider {
             height: 2px;
             background-color: #1b5e20;
@@ -67,14 +87,21 @@
             padding-bottom: 20px;
         }
         
-        /* Hace que se vea bien en el celular */
         @media (max-width: 600px) {
+            header h1 { font-size: 1.5rem; }
+            header p { font-size: 1rem; }
             h2 { font-size: 1.3rem; }
             .card { padding: 15px; }
         }
     </style>
 </head>
 <body>
+
+    <!-- CABECERA PRINCIPAL -->
+    <header>
+        <h1>Hola, soy Jhonatan Quintero Bastidas</h1>
+        <p>Estudiante de Grado 11 | Apasionado por la Arquitectura</p>
+    </header>
 
     <div class="container">
         
